@@ -10,9 +10,14 @@ while pessoas <= qt_convidados:
     idade_pessoa = int(input(f"Bem vindo {pessoas} pessoa!\nQual a sua idade: "))
 
     convite = input("Você possui o convite? sim ou não\n")
+
     if(convite == "sim"):
-        convite = True
-        entradas += 1
+        if(idade_pessoa == 16 or idade_pessoa == 17):
+            convite = True
+            entradas += 1
+        else:
+            convite = False
+            pessoas_barradas += 1
     else:
         if(idade_pessoa>= 18):
             convite = True
