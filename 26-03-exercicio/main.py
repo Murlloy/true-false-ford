@@ -3,6 +3,7 @@ qt_convidados = int(input("Digite a quantidade de convidados para sua festinha:\
 pessoas = 1
 
 pessoas_barradas = 0
+sem_convites = 0
 entradas = 0
 
 while pessoas <= qt_convidados:
@@ -16,6 +17,7 @@ while pessoas <= qt_convidados:
         if(idade_pessoa>= 18):
             convite = True
             entradas += 1
+            sem_convites += 1
         else:
             convite = False
     if(convite == True):
@@ -29,3 +31,4 @@ while pessoas <= qt_convidados:
 
 print(f"pessoas barradas: {pessoas_barradas}")
 print(f"pessoas que entraram: {entradas}")
+print(f"pessoas que entraram sem convite: {sem_convites}")
