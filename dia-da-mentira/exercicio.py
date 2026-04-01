@@ -3,7 +3,7 @@ cidade = input("Digite uma cidade: ")
 temperatura = input("Digite uma temperatura: ")
 ano = input("Digite um ano: ")
 
-print(f"Bem vindo a {cidade}, estamos no ano de {ano} e estamos com {temperatura} ")
+print(f"Bem vindo a {cidade}, estamos no ano de {ano} e estamos com {temperatura} graus")
 
 # exercicio 2
 
