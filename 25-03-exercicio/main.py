@@ -130,7 +130,7 @@ while True:
 
     elif opcao == 7:
 
-        max_fabonacci = int(input("\n================== TRIPONACCI =================\nAté que numero gostaria que o TRIPONACCI fosse?\n"))
+        max_fabonacci = int(input("\n================== FABONACCI =================\nAté que numero gostaria que o FABONACCI fosse?\n"))
 
         inicial_1 = 0
         inicial_2 = 1
