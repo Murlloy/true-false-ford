@@ -16,13 +16,16 @@ while True:
 
     ## exercicio 2
     elif opcao == 2:
+
         numeros = []
 
         for i in range(10):
             n = float(input(f"Digite o {i + 1} valor: "))
             numeros.append(n)
 
-        print(numeros.reverse())
+        numeros.reverse()
+
+        print(numeros)
 
     ## exercicio 3 
 
@@ -38,7 +41,7 @@ while True:
         print(f"A somas desses numeros é: {notas}")
         print(f"A media desses numeros é: {media}")
 
-    opcao = int(input("Deseja Testar novamente?\n1 - Sim\n 2 - Não\n: "))
+    opcao = int(input("Deseja Testar novamente?\n1 - Sim\n2 - Não\n: "))
 
     if(opcao == 2):
         break
