@@ -46,10 +46,12 @@ elif opcao == 2:
     aluno["nome"] = input("Qual o seu nome: ")
     aluno["idade"] = input("Qual a sua idade: ")
     aluno["curso"] = input("Qual o seu curso: ")
+    aluno["nota"] = input("Digite a nota dele: ")
 
     print(f"Nome: {aluno["nome"]}")
     print(f"Idade: {aluno["idade"]} anos")
     print(f"Curso: {aluno["curso"]}")
+    print(f"Nota: {aluno["nota"]}")
 
 elif opcao == 3:
     # 3 produtos mostre o preço do primeiro produto e remova o produto 2 e mostre o dicionario
