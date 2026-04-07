@@ -16,4 +16,10 @@ elif opcao == 2:
     print(tupla_palavras[3])
 
 elif opcao == 3:
-    
+    tupla = (5,10,15,20)
+
+    tupla_lista = list(tupla)
+    tupla_lista.append(25)
+    tupla = tuple(tupla_lista)
+
+    print(tupla)
