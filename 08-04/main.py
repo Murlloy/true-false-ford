@@ -2,6 +2,8 @@
 opcao = int(input("1 - Contar Pares\n" \
 "2 - Ao Cubo de numeros\n" \
 "3 - Lista de Compras \n" \
+"4 - Divisão segura\n" \
+"5 - Dicionario de produtos com Preços"
 "\nDigite o exercicio que deseja resolver: "))
 
 if opcao == 1:
@@ -65,3 +67,81 @@ elif opcao == 3:
 
     print("=========== Carrinho De Compras =========")
     calcular_total(lista_compras)
+
+elif opcao == 4:
+
+    def divisao_segura(): 
+        try:
+            num1 = float(input("Digite o primeiro valor: "))
+            div = float(input("Digite o valor que deseja dividir ele: "))
+
+            resultado = num1 / div
+
+            print(f"O Resultado da divisão é: {resultado}")
+
+        except ZeroDivisionError:
+            print("Impossivel!! Dividir por zero!")
+
+        finally:
+            print("Finalizando...")
+
+    divisao_segura()
+
+elif opcao == 5:
+
+    produtos = {
+            1: {
+                "nome_produto": "Lontra Domestica",
+                "preco": 200
+            },
+            2: {
+                "nome_produto": "Capivara Relaxada",
+                "preco": 150
+            },
+            3: {
+                "nome_produto": "Pato de Botas",
+                "preco": 120
+            },
+            4: {
+                "nome_produto": "Gato Ninja",
+                "preco": 180
+            },
+            5: {
+                "nome_produto": "Cachorro Astronauta",
+                "preco": 250
+            },
+            6: {
+                "nome_produto": "Coelho Mágico",
+                "preco": 130
+            },
+            7: {
+                "nome_produto": "Raposa Hacker",
+                "preco": 300
+            },
+            8: {
+                "nome_produto": "Urso Gamer",
+                "preco": 220
+            },
+            9: {
+                "nome_produto": "Tartaruga Zen",
+                "preco": 140
+            },
+            10: {
+                "nome_produto": "Coruja Sábia",
+                "preco": 160
+            },
+            11: {
+                "nome_produto": "Leão Rei",
+                "preco": 350
+            }}
+
+    def buscar_preco_por_id(id):
+        try:
+            produto = produtos[id]
+            print(f"===== {produto['nome_produto']} =====")
+            print(f"O preço desse produto é: R${produto['preco']}")
+        except KeyError:
+            print("Valor inválido!")
+
+    id_produto = int(input("Digite o id do produto que deseja: "))
+    buscar_preco_por_id(id_produto)
